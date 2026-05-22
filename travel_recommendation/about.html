@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Horizon Travels</title>
+    <style>
+        :root {
+            --primary-bg: #0f172a;
+            --accent-teal: #0ed56f;
+            --text-main: #f8fafc;
+            --card-overlay: rgba(15, 23, 42, 0.9);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-main);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(15, 23, 42, 0.95);
+            padding: 1rem 4rem;
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .nav-logo h1 { margin: 0; font-size: 1.5rem; font-weight: 700; }
+        .nav-logo span { color: var(--accent-teal); }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-right: 2rem;
+            font-weight: 500;
+        }
+
+        .about-container {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: var(--card-overlay);
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+        }
+
+        h2 { color: var(--accent-teal); font-size: 2.5rem; margin-top: 0; }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            background-color: rgba(30, 41, 59, 0.7);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .team-member h4 { margin: 0.5rem 0 0.2rem 0; font-size: 1.2rem; }
+        .team-member p { margin: 0; color: var(--accent-teal); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <h1>Horizon<span>Travels</span></h1>
+        </div>
+        <div class="nav-links">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <h2>Our Mission</h2>
+        <p>
+            Horizon Travels is a global team of data engineering and software technicians dedicated to simplifying architectural travel logistics and destination matching paradigms. We compile extensive geographic records to provide our users with unmatched travel itineraries instantly.
+        </p>
+
+        <h3 style="margin-top: 3rem; font-size: 1.8rem;">Meet Our Leadership Team</h3>
+        <div class="team-grid">
+            <div class="team-member">
+                <h4>Gosego Matlokwe</h4>
+                <p>Lead Solutions Architect & Developer</p>
+            </div>
+            <div class="team-member">
+                <h4>Jane Doe</h4>
+                <p>Chief Technical Officer</p>
+            </div>
+            <div class="team-member">
+                <h4>John Smith</h4>
+                <p>Lead Travel Data Engineer</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
